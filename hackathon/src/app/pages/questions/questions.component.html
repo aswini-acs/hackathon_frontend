@@ -1,0 +1,14 @@
+<div *ngFor="let topic of questions">
+    <h2>{{ topic.topic }}</h2>
+    <p>{{ topic.statement }}</p>
+  
+    <div *ngFor="let question of topic.questions">
+      <h3>{{ question.question }}</h3>
+  
+      <div *ngFor="let choice of question.choices">
+        <input type="radio" name="{{ question.id }}" [(ngModel)]="question.selectedChoice" [value]="choice.id">
+        {{ choice.name }}
+      </div>
+    </div>
+  </div>
+  

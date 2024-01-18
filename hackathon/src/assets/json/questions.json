@@ -1,0 +1,86 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "topic": "Science",
+        "statement": "Test your knowledge of science with these questions.",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the chemical symbol for water?",
+            "choices": [
+              {"id": 1, "name": "H2O"},
+              {"id": 2, "name": "CO2"},
+              {"id": 3, "name": "O2"},
+              {"id": 4, "name": "N2"}
+            ]
+          },
+          {
+            "id": 2,
+            "question": "Which planet is known as the Red Planet?",
+            "choices": [
+              {"id": 5, "name": "Mars"},
+              {"id": 6, "name": "Venus"},
+              {"id": 7, "name": "Jupiter"},
+              {"id": 8, "name": "Saturn"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "topic": "History",
+        "statement": "Explore historical facts with these questions.",
+        "questions": [
+          {
+            "id": 3,
+            "question": "Who was the first President of the United States?",
+            "choices": [
+              {"id": 9, "name": "George Washington"},
+              {"id": 10, "name": "Thomas Jefferson"},
+              {"id": 11, "name": "John Adams"},
+              {"id": 12, "name": "Abraham Lincoln"}
+            ]
+          },
+          {
+            "id": 4,
+            "question": "In which year did World War II end?",
+            "choices": [
+              {"id": 13, "name": "1945"},
+              {"id": 14, "name": "1939"},
+              {"id": 15, "name": "1941"},
+              {"id": 16, "name": "1943"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "topic": "Geography",
+        "statement": "Test your geography knowledge with these questions.",
+        "questions": [
+          {
+            "id": 5,
+            "question": "What is the capital of France?",
+            "choices": [
+              {"id": 17, "name": "Paris"},
+              {"id": 18, "name": "Berlin"},
+              {"id": 19, "name": "Rome"},
+              {"id": 20, "name": "London"}
+            ]
+          },
+          {
+            "id": 6,
+            "question": "Which river is the longest in the world?",
+            "choices": [
+              {"id": 21, "name": "Nile"},
+              {"id": 22, "name": "Amazon"},
+              {"id": 23, "name": "Yangtze"},
+              {"id": 24, "name": "Mississippi"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

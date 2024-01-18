@@ -1,23 +1,69 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+ 
+/* Style for the container */
 div {
     max-width: 400px;
     margin: 50px auto;
-    text-align: center;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-   
-  h1 {
+}
+ 
+/* Heading styles */
+h1, h2 {
     color: #333;
-  }
-   
-  p {
+}
+ 
+/* Paragraph styles */
+p {
     color: #555;
-  }
-   
-  select {
+}
+ 
+/* Style for the select element */
+select {
+    width: 100%;
     padding: 8px;
-    margin-top: 10px;
-  }
-   
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+ 
+/* Style for the form and its labels and inputs */
+form {
+    display: flex;
+    flex-direction: column;
+}
+ 
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+ 
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+ 
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: #45a049;
+}
+
