@@ -1,14 +1,21 @@
-<div *ngFor="let topic of questions">
-    <h2>{{ topic.topic }}</h2>
-    <p>{{ topic.statement }}</p>
+<!-- questions.component.html -->
+<form [formGroup]="form" (ngSubmit)="submitForm()" class="form-container">
+    <div *ngFor="let topic of questions; let i = index" class="parent" [ngClass]="{'even': i % 2 === 0, 'odd': i % 2 !== 0}">
+      <h2 class="statement">{{ topic.topic }}</h2>
+      <h2>{{ topic.statement }}</h2>
   
-    <div *ngFor="let question of topic.questions">
-      <h3>{{ question.question }}</h3>
+      <div *ngFor="let question of topic.questions">
+        <h3>{{ question.question }}</h3>
   
-      <div *ngFor="let choice of question.choices">
-        <input type="radio" name="{{ question.id }}" [(ngModel)]="question.selectedChoice" [value]="choice.id">
-        {{ choice.name }}
+        <div *ngFor="let choice of question.choices" (click)="selectChoice(topic, question, choice)" [class.selected]="question.selectedChoice === choice.id">
+          {{ choice.name }}
+        </div>
       </div>
     </div>
-  </div>
+  
+    <div class="text-center">
+        <button type="submit" class="submit-button"
+        [disabled]="isDataArrayEmpty()"
+        [ngStyle]="{'background-color': isDataArrayEmpty() ? 'grey' : 'blue'}">Submit</button></div>
+  </form>
   

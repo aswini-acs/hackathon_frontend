@@ -1,0 +1,51 @@
+div {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+  }
+  
+  /* ... Other styles ... */
+  
+  /* Highlight selected choice */
+  input[type="radio"]:checked+label {
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
+  /* Add a class for highlighting the selected div */
+  .selected-choice {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  .selected {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  .statement{
+    color: #007BFF;
+  }
+  .parent.even {
+    background-color:  #FFFFFF; /* Set the background color for even-indexed items */
+}
+
+.parent.odd {
+    background-color: #FFFFFF; /* Set the background color for odd-indexed items */
+}
+/* questions.component.css */
+
+
+  
+  .submit-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto; /* Push the button to the bottom */
+  }
+  
