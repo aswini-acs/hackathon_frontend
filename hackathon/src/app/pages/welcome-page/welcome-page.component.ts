@@ -1,13 +1,13 @@
 import { Component , OnInit} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
- 
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-welcome-page',
   templateUrl: './welcome-page.component.html',
   styleUrls: ['./welcome-page.component.css']
 })
 export class WelcomePageComponent implements OnInit{
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private router: Router) { }
   signinForm!: FormGroup
   ngOnInit(): void {
     this.signinForm = this.fb.group({
@@ -19,13 +19,14 @@ export class WelcomePageComponent implements OnInit{
  
   onLanguageChange() {
     // You can perform additional actions when the language changes
-    console.log('Selected language:', this.selectedLanguage);
+   
     // You might want to navigate to different routes or load content based on the selected language
   }
   onSubmit() {
     if (this.signinForm.valid) {
-      // Perform sign-in logic here
-      console.log('Sign In Successful!', this.signinForm.value);
+      // Navigate to the next route
+      console.log('Form is valid, navigating to questions');
+      this.router.navigate(['/questions']);
     }
   }
 }
