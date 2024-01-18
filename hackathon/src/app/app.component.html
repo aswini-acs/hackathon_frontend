@@ -1,14 +1,1 @@
- 
-<div>
-  <h1>Welcome to Our Website!</h1>
-   
-    <p>Please select your preferred language:</p>
-   
-    <select [(ngModel)]="selectedLanguage" (change)="onLanguageChange()">
-  <option value="en">English</option>
-  <option value="es">Español</option>
-  <!-- Add more language options as needed -->
-  </select>
-   
-    <p *ngIf="selectedLanguage">Selected Language: {{ selectedLanguage }}</p>
-  </div>
+<router-outlet></router-outlet>
